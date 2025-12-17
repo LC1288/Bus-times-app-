@@ -7,4 +7,4 @@ WebGL2RenderingContext() {
         <span className="pitch">Toast as a service</span>
         </header>
     );
-}
+};
