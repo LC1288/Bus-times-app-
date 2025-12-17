@@ -1,10 +1,8 @@
-WebGL2RenderingContext() {
-    const userCount =_.multiply(this.state.userCount,100)
+const data = [
+  { line: "25", minutes: 3 },
+  { line: "38", minutes: 7 },
+  { line: "15", minutes: 12 },
+];
 
-    return(
-        <header className="Site-header">
 
-        <span className="pitch">Toast as a service</span>
-        </header>
-    );
-};
+setInterval(getBusTimes, 30000); // refresh every 30 seconds
