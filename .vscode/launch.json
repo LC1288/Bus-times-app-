@@ -1,57 +1,33 @@
 {
     "version": "0.2.0",
     "configurations": [
-        {
-            "type": "pwa-msedge",
-            "name": "Launch Microsoft Edge",
-            "request": "launch",
-            "runtimeExecutable": "/usr/bin/microsoft-edge", // Path to Microsoft Edge on Linux
-            "runtimeArgs": [
-                "--remote-debugging-port=9222"
-            ],
-            "url": "http://localhost:3000", // Replace with your local project's URL
-            "presentation": {
-                "hidden": true
-            }
-        },
-        {
-            "type": "pwa-msedge",
-            "name": "Launch Microsoft Edge in headless mode",
-            "request": "launch",
-            "runtimeExecutable": "/usr/bin/microsoft-edge", // Path to Microsoft Edge on Linux
-            "runtimeArgs": [
-                "--headless",
-                "--remote-debugging-port=9222"
-            ],
-            "url": "http://localhost:3000", // Replace with your local project's URL
-            "presentation": {
-                "hidden": true
-            }
-        },
-        {
-            "type": "vscode-edge-devtools.debug",
-            "name": "Open Edge DevTools",
-            "request": "attach",
-            "url": "http://localhost:3000", // Replace with your local project's URL
-            "presentation": {
-                "hidden": true
-            }
-        }
-    ],
-    "compounds": [
-        {
-            "name": "Launch Edge Headless and attach DevTools",
-            "configurations": [
-                "Launch Microsoft Edge in headless mode",
-                "Open Edge DevTools"
-            ]
-        },
-        {
-            "name": "Launch Edge and attach DevTools",
-            "configurations": [
-                "Launch Microsoft Edge",
-                "Open Edge DevTools"
-            ]
-        }
+      {
+        "type": "pwa-chrome",
+        "request": "launch",
+        "name": "Launch Chrome",
+        "runtimeExecutable": "/usr/bin/chromium",
+        "url": "http://localhost:3000",
+        "webRoot": "${workspaceFolder}"
+      },
+      {
+        "type": "pwa-chrome",
+        "request": "launch",
+        "name": "Launch Chrome Headless",
+        "runtimeExecutable": "/usr/bin/chromium",
+        "runtimeArgs": [
+          "--headless",
+          "--remote-debugging-port=9222"
+        ],
+        "url": "http://localhost:3000",
+        "webRoot": "${workspaceFolder}"
+      },
+      {
+        "type": "pwa-chrome",
+        "request": "attach",
+        "name": "Attach to Chrome",
+        "port": 9222,
+        "webRoot": "${workspaceFolder}"
+      }
     ]
-}
+  }
+  
