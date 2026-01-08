@@ -1,33 +1,32 @@
 {
-    "version": "0.2.0",
-    "configurations": [
-      {
-        "type": "pwa-chrome",
-        "request": "launch",
-        "name": "Launch Chrome",
-        "runtimeExecutable": "/usr/bin/chromium",
-        "url": "http://localhost:3000",
-        "webRoot": "${workspaceFolder}"
-      },
-      {
-        "type": "pwa-chrome",
-        "request": "launch",
-        "name": "Launch Chrome Headless",
-        "runtimeExecutable": "/usr/bin/chromium",
-        "runtimeArgs": [
-          "--headless",
-          "--remote-debugging-port=9222"
-        ],
-        "url": "http://localhost:3000",
-        "webRoot": "${workspaceFolder}"
-      },
-      {
-        "type": "pwa-chrome",
-        "request": "attach",
-        "name": "Attach to Chrome",
-        "port": 9222,
-        "webRoot": "${workspaceFolder}"
-      }
-    ]
-  }
-  
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "pwa-chrome",
+      "request": "launch",
+      "name": "Launch Opera GX",
+      "runtimeExecutable": "C:\\Users\\%USERNAME%\\AppData\\Local\\Programs\\Opera GX\\opera.exe",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "type": "pwa-chrome",
+      "request": "launch",
+      "name": "Launch Opera GX Headless",
+      "runtimeExecutable": "C:\\Users\\%USERNAME%\\AppData\\Local\\Programs\\Opera GX\\opera.exe",
+      "runtimeArgs": [
+        "--headless",
+        "--remote-debugging-port=9222"
+      ],
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "type": "pwa-chrome",
+      "request": "attach",
+      "name": "Attach to Opera GX",
+      "port": 9222,
+      "webRoot": "${workspaceFolder}"
+    }
+  ]
+}
