@@ -4,29 +4,11 @@
     {
       "type": "pwa-chrome",
       "request": "launch",
-      "name": "Launch Opera GX",
+      "name": "Debug Opera GX (Vite)",
       "runtimeExecutable": "C:\\Users\\luthe\\AppData\\Local\\Programs\\Opera GX\\opera.exe",
-      "url": "http://localhost:3000",
-      "webRoot": "${workspaceFolder}"
-    },
-    {
-      "type": "pwa-chrome",
-      "request": "launch",
-      "name": "Launch Opera GX Headless",
-      "runtimeExecutable": "C:\\Users\\luthe\\AppData\\Local\\Programs\\Opera GX\\opera.exe",
-      "runtimeArgs": [
-        "--headless",
-        "--remote-debugging-port=9222"
-      ],
-      "url": "http://localhost:3000",
-      "webRoot": "${workspaceFolder}"
-    },
-    {
-      "type": "pwa-chrome",
-      "request": "attach",
-      "name": "Attach to Opera GX",
-      "port": 9222,
+      "url": "http://localhost:5173",
       "webRoot": "${workspaceFolder}"
     }
   ]
 }
+
